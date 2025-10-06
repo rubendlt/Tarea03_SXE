@@ -50,7 +50,14 @@ Obtener IP del contenedor y Hacer ping desde el contenedor:
     
     docker run -it --name dam_alp2 alpine sh
     ping -c 4 <IP_de_dam_alp1>
-    
+
+## 6. Ver la cantidad de disco duro que ocupaste y cuanta RAM ocupan los contenedores
+
+```shell
+docker system df
+docker stats
+```
+
 
     
 
