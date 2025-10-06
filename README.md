@@ -35,4 +35,25 @@ Para obtener el nombre:
    docker run -it --name dam_alp1 alpine sh
    ```
 
+## 4.Comprobar la IP y hacer ping a google.com
+Obtener IP del contenedor y Hacer ping desde el contenedor:
+   
+ 
+    docker inspect -f '{{ .NetworkSettings.IPAddress }}' dam_alp1
+    ping -c 4 google.com
+
+<img width="997" height="262" alt="Captura desde 2025-10-06 12-17-40" src="https://github.com/user-attachments/assets/86ca063f-3038-48b5-b573-34a39bab9b90" />
+
+## 5. Crear un contenedor dam_alp2 y probar comunicación entre contenedores
+-Dentro de dam_alp2, hacer ping a dam_alp1 (usando la IP obtenida antes):
+    
+    
+    docker run -it --name dam_alp2 alpine sh
+    ping -c 4 <IP_de_dam_alp1>
+    
+
+    
+
+    
+   
   
