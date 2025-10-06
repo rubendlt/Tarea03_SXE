@@ -29,4 +29,10 @@ Para obtener el nombre:
    ```
 <img width="998" height="130" alt="Captura desde 2025-10-06 12-07-31" src="https://github.com/user-attachments/assets/cd877a3b-9ea6-4a28-a7fa-0e08a3e3eb55" />
 
+## 3.Crear un contenedor con nombre dam_alp1
+
+   ```bash
+   docker run -it --name dam_alp1 alpine sh
+   ```
+
   
